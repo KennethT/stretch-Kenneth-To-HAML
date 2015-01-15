@@ -27,8 +27,9 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
+
+    <div class="container">
+      <div class="jumbotron">
         <h1>gCamp</h1>
         <p>Your life, organized.</p>
       </div>
@@ -39,7 +40,8 @@
       <div class="row">
         <div class="col-md-4">
           <p class="lead">
-            <img alt="Panel1" class="img-responsive" src="/assets/img1.jpg">
+
+            <%= image_tag("img1.jpg", class: "img-responsive") %>
           </p>
           <div class="panel panel-primary">
             <div class="panel-heading">Tasks</div>
@@ -50,7 +52,7 @@
         </div>
         <div class="col-md-4">
           <p class="lead">
-            <img alt="Panel2" class="img-responsive" src="/assets/img2.jpg">
+            <%= image_tag("img2.jpg", class: "img-responsive") %>
           </p>
           <div class="panel panel-primary">
             <div class="panel-heading">Documents</div>
@@ -65,7 +67,7 @@
         </div>
         <div class="col-md-4">
           <p class="lead">
-            <img alt="Panel3" class="img-responsive" src="/assets/img3.jpg">
+            <%= image_tag("img3.jpg", class: "img-responsive") %>
           </p>
           <div class="panel panel-primary">
             <div class="panel-heading">Comments</div>
@@ -101,16 +103,16 @@
 
             <div class="col-md-6 text-right">
               <a href="https://www.linkedin.com">
-                <img alt="Linked in" class="img-footer" src="/assets/linkedin.jpg">
+                <%= image_tag("linkedin.jpg", class: "img-footer") %>
               </a>
               <a href="https://github.com/">
-                <img alt="Github" class="img-footer" src="/assets/github.png">
+                <%= image_tag("github.png", class: "img-footer") %>
               </a>
               <a href="https://twitter.com/">
-                <img alt="Twitter" class="img-footer" src="/assets/twitter.png">
+                <%= image_tag("twitter.png", class: "img-footer") %>
               </a>
               <a href="https://students.gschool.it/">
-                <img alt="Galvanize g" class="img-footer" src="/assets/galvanize.png">
+                <%= image_tag("galvanize.png", class: "img-footer") %>
               </a>        </div>
             </div>
           </footer>
