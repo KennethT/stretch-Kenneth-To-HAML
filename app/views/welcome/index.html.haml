@@ -1,0 +1,31 @@
+%html
+  .jumbotron
+    %h1 gCamp
+    %p Your life, organized.
+  .row
+    .col-md-4
+      %p.lead
+        = image_tag("img1.jpg", class: "img-responsive")
+      .panel.panel-primary
+        .panel-heading Tasks
+        .panel-body.home-panel
+          %p Grouped by projects and lists, just the way you like'em
+    .col-md-4
+      %p.lead
+        = image_tag("img2.jpg", class: "img-responsive")
+      .panel.panel-primary
+        .panel-heading Documents
+        .panel-body.home-panel
+          %ul
+            %li Upload
+            %li Comment
+            %li Revise
+    .col-md-4
+      %p.lead
+        = image_tag("img3.jpg", class: "img-responsive")
+      .panel.panel-primary
+        .panel-heading Comments
+        .panel-body.home-panel
+          %ul
+            %li Comment on tasks and documents
+            %li Get email notifications

@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title GCampKennethTo
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %nav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          %a.navbar-brand{:href => "#"} gCamp
+        #navbar.navbar-collapse.collapse
+    .container
+      = yield
+
+      %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+      %script{:src => "../../dist/js/bootstrap.min.js"}
+      %script{:src => "../../assets/js/ie10-viewport-bug-workaround.js"}
